@@ -1,0 +1,129 @@
+.ceo-profile {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.ceo-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.ceo-profile h2 {
+    color: #4A90E2;
+    margin-bottom: 10px;
+}
+
+.ceo-profile p {
+    color: #333;
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+/* CV Header */
+.cv-header {
+    display: flex;
+    align-items: center;
+    background-color: #f4f4f9;
+    padding: 20px;
+    border-bottom: 2px solid  #4A90E2;
+}
+
+.cv-photo {
+    flex: 1;
+    text-align: center;
+}
+
+.cv-photo img {
+    width: 150px; /* Ukuran frame lebih besar */
+    height: 150px; /* Tinggi frame sesuai */
+    border-radius: 50%; /* Membuat gambar melingkar */
+    border: 3px solid #090707; /* Border tetap proporsional */
+    object-fit: contain; /* Memastikan gambar tidak terpotong */
+    background-color: #181414; /* Tambahkan latar belakang untuk area kosong */
+}
+
+
+.cv-info {
+    flex: 3;
+    padding-left: 20px;
+}
+
+.cv-info h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.cv-info p {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* CV Main Content */
+.cv-main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cv-main h2 {
+    color: #4A90E2;
+    border-bottom: 2px solid  #4A90E2;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.cv-main ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.cv-main li {
+    margin-bottom: 10px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-list li {
+    background-color:  #4A90E2;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+/* CV Footer */
+.cv-footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+}
+
+.back-button {
+    display: block; /* Membuat tombol menjadi elemen blok */
+    margin: 20px auto; /* Menengahkan tombol secara horizontal */
+    padding: 10px 20px;
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    text-align: center;
+}
+
+.back-button:hover {
+    background-color: #333;
+}

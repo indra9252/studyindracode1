@@ -1,0 +1,184 @@
+/* Tambahkan font modern */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom right, #f9f9ff, #dfe9ff);
+    color: #333;
+    margin: 0;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #4A90E2;
+    color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+/* Website List Section */
+.website-list {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    animation: slideUp 1s;
+}
+
+.website-list h2 {
+    color: #4A90E2;
+    margin-bottom: 20px;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.website-list ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.website-list li {
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 28%;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.website-list li:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background-color: #f0f8ff;
+}
+
+.website-list li img {
+    width: 100%;
+    height: auto;
+    border-bottom: 3px solid #4A90E2;
+}
+
+.website-list li h3 {
+    margin: 15px 10px 5px;
+    color: #333;
+    font-size: 1.4em;
+}
+
+.website-list li p {
+    margin: 5px 10px 15px;
+    color: #777;
+    font-size: 1em;
+}
+
+.website-list a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: color 0.3s ease-in-out;
+}
+
+.website-list a:hover h3 {
+    color: #4A90E2;
+}
+
+/* Pastikan body memenuhi tinggi penuh layar */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Wrapper untuk konten utama */
+.wrapper {
+    flex: 1; /* Membuat konten utama fleksibel untuk mengisi ruang */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Back to Top Button */
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 1.5em;
+    display: none;
+    transition: transform 0.3s;
+}
+
+#backToTop:hover {
+    transform: scale(1.2);
+}
+
+/* Animasi */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.back-button {
+    display: block; /* Membuat tombol menjadi elemen blok */
+    margin: 20px auto; /* Menengahkan tombol secara horizontal */
+    padding: 10px 20px;
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    text-align: center;
+}
+
+.back-button:hover {
+    background-color: #333;
+}
